@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Directorio de Servicios Públicos</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --secondary: #64748b;
+      --accent: #f59e0b;
+      --background: #f8fafc;
+      --text: #1e293b;
+      --white: #ffffff;
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      background-color: var(--white);
+      box-shadow: var(--shadow);
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      color: var(--primary);
+      font-size: 1.75rem;
+    }
+    .intro-section {
+      max-width: 800px;
+      margin: 2rem auto;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    .intro-section h2 {
+      font-size: 1.5rem;
+      color: var(--primary-dark);
+      margin-bottom: 1rem;
+    }
+    .intro-section p {
+      color: var(--secondary);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    .stores-grid {
+      max-width: 1200px;
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+    .store-card {
+      background-color: var(--white);
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .store-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    .store-image {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .store-content {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .store-title {
+      font-size: 1.25rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .store-description {
+      color: var(--secondary);
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+    .store-button {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    .store-button:hover {
+      background-color: var(--primary-dark);
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: var(--text);
+      color: var(--white);
+      margin-top: 2rem;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+      .intro-section h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Directorio de Servicios Públicos</h1>
+  </header>
+
+  <section class="intro-section">
+    <h2>Servicios Esenciales para la Comunidad</h2>
+    <p>
+      Conoce la ubicación y la información de contacto de los principales 
+      servicios públicos de tu localidad, como municipalidad, hospital, bomberos, 
+      policía, clubes, bibliotecas y escuelas.
+    </p>
+  </section>
+
+  <section class="stores-grid">
+    <!-- Tarjeta #1: Municipalidad -->
+    <div class="store-card">
+      <img
+        src="Imagen de municipalidad.png"
+        alt="Municipalidad Local"
+        class="store-image"
+      />
+      <div class="store-content">
+        <h3 class="store-title">Municipalidad Local</h3>
+        <p class="store-description">
+          Administración y gestión de servicios para la comunidad. 
+          Ofrece trámites de documentación, información ciudadana y 
+          atención al cliente. Este contenido es solo un demo y se encuentra en alquiler.
+        </p>
+        <a href="https://wold-marketplaces.github.io/Municipalidad-demo/" class="store-button">
+          Visitar Sitio
+        </a>
+      </div>
+    </div>
+
+    <!-- Tarjeta #2: Hospital -->
+    <div class="store-card">
+      <img
+        src="https://images.pexels.com/photos/8531918/pexels-photo-8531918.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Hospital General"
+        class="store-image"
+      />
+      <div class="store-content">
+        <h3 class="store-title">Hospital General</h3>
+        <p class="store-description">
+          Atención médica de emergencia y especialidades, con servicio de urgencias
+          disponible las 24 horas. Cuenta con alta tecnología en diagnóstico.
+        </p>
+        <a href="https://example.com/hospital-general" class="store-button">
+          Visitar Sitio
+        </a>
+      </div>
+    </div>
+
+    <!-- Tarjeta #3: Bomberos -->
+    <div class="store-card">
+      <img
+        src="https://images.pexels.com/photos/4497715/pexels-photo-4497715.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Cuerpo de Bomberos"
+        class="store-image"
+      />
+      <div class="store-content">
+        <h3 class="store-title">Cuerpo de Bomberos</h3>
+        <p class="store-description">
+          Servicio de respuesta rápida ante incendios, rescates y emergencias.
+          Protección y seguridad para la comunidad.
+        </p>
+        <a href="https://example.com/bomberos" class="store-button">
+          Visitar Sitio
+        </a>
+      </div>
+    </div>
+
+    <!-- Tarjeta #4: Policía -->
+    <div class="store-card">
+      <img
+        src="https://images.pexels.com/photos/4672113/pexels-photo-4672113.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Comisaría Central"
+        class="store-image"
+      />
+      <div class="store-content">
+        <h3 class="store-title">Comisaría Central</h3>
+        <p class="store-description">
+          Mantenimiento del orden y la seguridad ciudadana. Gestión de denuncias,
+          patrullajes y protección de la comunidad.
+        </p>
+        <a href="https://example.com/comisaria-central" class="store-button">
+          Visitar Sitio
+        </a>
+      </div>
+    </div>
+
+    <!-- Tarjeta #5: Club Deportivo -->
+    <div class="store-card">
+      <img
+        src="https://images.pexels.com/photos/860060/pexels-photo-860060.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Club Deportivo Ciudad"
+        class="store-image"
+      />
+      <div class="store-content">
+        <h3 class="store-title">Club Deportivo Ciudad</h3>
+        <p class="store-description">
+          Espacio para la práctica de deportes y actividades
+          recreativas. Ofrece canchas, torneos y programas de entrenamiento.
+        </p>
+        <a href="https://example.com/club-ciudad" class="store-button">
+          Visitar Sitio
+        </a>
+      </div>
+    </div>
+
+    <!-- Tarjeta #6: Biblioteca Municipal -->
+    <div class="store-card">
+      <img
+        src="https://images.pexels.com/photos/5450601/pexels-photo-5450601.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Biblioteca Municipal"
+        class="store-image"
+      />
+      <div class="store-content">
+        <h3 class="store-title">Biblioteca Municipal</h3>
+        <p class="store-description">
+          Amplia colección de libros, documentos y material audiovisual.
+          Espacios de lectura y programas culturales.
+        </p>
+        <a href="https://example.com/biblioteca" class="store-button">
+          Visitar Sitio
+        </a>
+      </div>
+    </div>
+
+    <!-- Tarjeta #7: Escuela Primaria -->
+    <div class="store-card">
+      <img
+        src="https://images.pexels.com/photos/1463907/pexels-photo-1463907.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Escuela Primaria Local"
+        class="store-image"
+      />
+      <div class="store-content">
+        <h3 class="store-title">Escuela Primaria Local</h3>
+        <p class="store-description">
+          Educación de excelencia para niños y niñas de la comunidad, con
+          programas de apoyo y participación de la familia.
+        </p>
+        <a href="https://example.com/escuela-primaria" class="store-button">
+          Visitar Sitio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 - Directorio de Servicios Públicos. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+</qodoArtifact>
