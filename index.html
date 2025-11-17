@@ -130,6 +130,41 @@
         font-size: 1.3rem;
       }
     }
+    /* Estilos para el botón de volver */
+    .back-button-container {
+      text-align: center;
+      margin: 2rem auto;
+      max-width: 1200px;
+      padding: 0 1rem;
+    }
+    .back-button {
+      display: inline-block;
+      background-color: var(--accent);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: var(--shadow);
+    }
+    .back-button:hover {
+      background-color: #e68a00;
+      transform: translateY(-2px);
+    }
+    .back-button {
+        /* Mantener los estilos actuales */
+        margin-top: 1rem; /* Añadir separación */
+    }
+
+    .back-button::before {
+        content: "←"; /* Agregar flecha */
+        margin-right: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -137,6 +172,13 @@
   <header>
     <h1>Directorio de Servicios Públicos</h1>
   </header>
+
+  <!-- Botón para volver a Tilisarao Market -->
+  <div class="back-button-container">
+    <a href="https://tilisaraomarket.github.io/Tilisarao-Market/" class="back-button">
+      Volver a Tilisarao Market
+    </a>
+  </div>
 
   <section class="intro-section">
     <h2>Servicios Esenciales para la Comunidad</h2>
@@ -286,17 +328,17 @@
     <!-- Tarjeta #5: Club Deportivo -->
     <div class="store-card">
       <img
-        src="https://images.pexels.com/photos/860060/pexels-photo-860060.jpeg?auto=compress&cs=tinysrgb&w=800"
+        src="Imagen de polideportivo.png"
         alt="Club Deportivo Ciudad"
         class="store-image"
       />
       <div class="store-content">
-        <h3 class="store-title">Club Deportivo Ciudad</h3>
+        <h3 class="store-title">Polideportivo</h3>
         <p class="store-description">
           Espacio para la práctica de deportes y actividades
           recreativas. Ofrece canchas, torneos y programas de entrenamiento.
         </p>
-        <a href="https://example.com/club-ciudad" class="store-button">
+        <a href="https://wold-marketplaces.github.io/Polideportivos/" class="store-button">
           Visitar Sitio
         </a>
       </div>
